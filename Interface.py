@@ -31,6 +31,7 @@ class interface:
         entry.insert(0, text)
         return
 
+    # Open file dialog
     def browse_file_dialog(self):
         r =  filedialog.askopenfilename(initialdir = "/",title = "Select file",filetypes = (("msg files","*.msg"),("Excel files","*.xlsx*")))
         return r
